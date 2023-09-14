@@ -41,11 +41,11 @@ HTML tags used in th website<br>
 
 8.video tag-The video tag is used to embed video content in a document, such as a movie clip or other video streams.<br>
 
-9."header"- This tag defines a header for a document.<br>
+9."header": This tag defines a header for a document.<br>
 
-10."footer"-This tag defines a footer for a document.<br>
+10."footer": This tag defines a footer for a document.<br>
 
-11."summary"-The  "summary" tag is used with <details> tag. It is used as a summary, caption or legend for the content of a <details> element.<br>
+11."summary"-The  "summary" tag is used with "details" tag. It is used as a summary, caption or legend for the content of a "details" element.<br>
 12."menu"-The "menu" tag defines a list of commands. <br>
 
 13.telphone-To create a link to a telephone number.<br>

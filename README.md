@@ -1,4 +1,4 @@
-# Webdesign_6150_assignment
+# Webdesign_6150_assignment-1
 
 ### Vidhi Patel
 ### NUID 002641341

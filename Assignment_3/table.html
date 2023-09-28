@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+	<title>Table CheckList</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+	
+</head>
+
+<body>
+	<h1>Vidhi Patel NEID:002641341</h1>
+	<table id="myTable">
+		<tr>
+			<th></th>
+			<th>STUDENT</th>
+			<th>ADVISOR</th>
+			<th>AWARD<br />STATUS</th>
+			<th>SEMESTER</th>
+			<th>TYPE</th>
+			<th>BUDGET<br />#</th>
+			<th>PERCENTAGE</th>
+			<th class="delBtn">DELETE</th>
+			<th class="editBtn">EDIT</th>
+		</tr>
+		<tr id="1">
+			<td>
+				<input type="checkbox" onchange="clickbox(this)" />
+				<br /><br />
+				<img src="down.png" width="25px" onclick="clickdown(this)" />
+			</td>
+			<td>Student 1</td>
+			<td>Teacher 1</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>12345</td>
+			<td>100%</td>
+			<td class="delBtn"><button onclick="deleteStudent(this)" class="buttonDelete">Delete</button></td>
+			<td class="editBtn"><button onclick="editStudent(this)" class="buttonEdit">Edit</button></td>
+		</tr>
+		<tr class="dropDownTextArea">
+			<td colspan="8">
+				Advisor:<br /><br />
+				Award Details<br />
+				Summer 1-2014(TA)<br />
+				Budget Number: <br />
+				Tuition Number: <br />
+				Comments:<br /><br /><br />
+				Award Status:<br /><br /><br />
+			</td>
+		</tr>
+		<tr id="2">
+			<td>
+				<input onchange="clickbox(this)" type="checkbox" />
+				<br /><br />
+				<img src="down.png" width="25px" onclick="clickdown(this)" />
+			</td>
+			<td>Student 2</td>
+			<td>Teacher 2</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>23456</td>
+			<td>100%</td>
+			<td class="delBtn"><button onclick="deleteStudent(this)" class="buttonDelete">Delete</button></td>
+			<td class="editBtn"><button onclick="editStudent(this)" class="buttonEdit">Edit</button></td>
+		</tr>
+		<tr class="dropDownTextArea">
+			<td colspan="8">
+				Advisor:<br /><br />
+				Award Details<br />
+				Summer 1-2014(TA)<br />
+				Budget Number: <br />
+				Tuition Number: <br />
+				Comments:<br /><br /><br />
+				Award Status:<br /><br /><br />
+			</td>
+		</tr>
+		<tr id="3">
+			<td><input type="checkbox" onchange="clickbox(this)" /><br /><br /><img src="down.png" width="25px"
+					onclick="clickdown(this)" /></td>
+			<td>Student 3</td>
+			<td>Teacher 3</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>34567</td>
+			<td>100%</td>
+			<td class="delBtn"><button onclick="deleteStudent(this)" class="buttonDelete">Delete</button></td>
+			<td class="editBtn"><button onclick="editStudent(this)" class="buttonEdit">Edit</button></td>
+		</tr>
+		<tr class="dropDownTextArea">
+			<td colspan="8">
+				Advisor:<br /><br />
+				Award Details<br />
+				Summer 1-2014(TA)<br />
+				Budget Number: <br />
+				Tuition Number: <br />
+				Comments:<br /><br /><br />
+				Award Status:<br /><br /><br />
+			</td>
+		</tr>
+	</table>
+
+	<br /><br />
+
+	<button id="button">SUBMIT SELECTED AWARDS</button>
+	<button id="add" onclick="addnewStudent()">Add New Student</button>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>

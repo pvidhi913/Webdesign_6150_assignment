@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container" >
+    <main>
+        
+        <form action="" id="my-form" name="myForm" onsubmit="return showData()">
+        <h1>SWIGGY!!!</h1>
+        <h3>Hundreds of flavors under one roof.</h3>
+        
+		<br><br>
+            <div class="control">
+                <label>Title* - </label>
+                <input type="radio" name="title" id="miss" value="miss" required> Miss
+                <input type="radio" name="title" id="mr" value="mr" required> Mr
+                <input type="radio" name="title" id="mrs" value="mrs" required> Mrs
+            </div>
+            <div class="control">
+                <label for="firstname"> First Name* - </label>
+                <input type="text" name="firstname" id="firstname" placeholder="First name " onkeyup="validatefname()" required>
+                <div id="firstname_error" style="float: right; color: red;"></div>
+				
+           
+            </div>
+            <div class="control">
+                <label for="lastname"> Last Name* - </label>
+                <input type="text" name="lastname" id="lastname" placeholder="Last name " onkeyup="validatelname()" required>
+                <div id="lastname_error" style="float: right; color: red"></div>
+				
+            </div>
+            
+            <div class="control">
+                <label for="email">Email* - </label>
+                <input type="text" name="email" id="email" placeholder="yourname@domain.com" onkeyup="validatemail()" required>
+            <div id="error_email" style="float: right; color: red;">  
+            </div>
+            </div>
+            
+            <div class="control">
+                <label for="phoneNumber">Phone Number* - </label>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" onkeyup ="validatephone()" required pattern="\d{3}-?\d{3}-\d{4}$">
+            <div id="error_phoneNumber" style="float:right;color: red;">
+            </div>
+            </div>
+            <div class="control">
+                <label for="streetaddress1"> Street Address 1* - </label>
+                <input type="text" name="streetaddress1" id="streetaddress1"  placeholder="Street Address 1" onkeyup="validateAddress1()" required>
+            <div id="error_streetaddress1" style="float:right; color: red;">
+                <br>
+            </div>
+            </div>
+               <label for="streetaddress2">Street Address 2 - </label>
+               <input type="text" name="streetaddress2" id="streetaddress2" placeholder="Street address 2">
+               <br><br>
+            <div class="control">
+                <label for="city"> City* - </label>
+                <input type="text" name="city" id="city"  placeholder="city" onkeyup="validateCity()" required>
+            <div id="error_city" style="float:right; color: red;">
+                <br>
+            </div>
+            </div>
+             
+            <div class="control">
+                <label for="state"> State* - </label>
+                <input type="text" name="state" id="state"  placeholder="state" onkeyup="validateState()" required>
+            <div id="error_state" style="float:right; color: red;">
+                <br>
+            </div>
+            </div>
+
+			<div class="control">
+				<label for="zipcode">ZipCode*:</label>
+				<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" onkeyup="validateZipcode()" required> 
+			<div id="error_zip" style="float:right; color:red;">
+                <br><br>
+            </div>
+            </div>
+
+            <div id="food">
+				<label for="food">Food:</label>
+				<select name="food" id="selectList" onchange="checkSelection()">
+					<option value="none">--Select--</option>
+					<option value="burger">Burger</option>
+					<option value="pizza">Pizza</option>
+					<option value="noodles">Noodles</option>
+					<option value="pasta">Pasta</option>
+					<option value="fries">Fries</option>
+				
+				</select>
+                    <br><br><br>
+                    
+                    <div id="dropDown">
+                        <input type='checkbox' name="list" value="selectList" required="required" onclick="checkBox(this)" id="selectCheckBox" style="margin-left: 150px;" /><p id="onSelect" style="display: inline-block;"> On select</p>
+                        <div id="dropDownbox">
+                            &nbsp;
+                            <p class="selectBox"><span class="required">*</span></p><input type="text" name="selectList" id="selectListText" placeholder="mandatory" onkeyup="validateSelectbox()" /><p class="selectBox" style="color: red;">&nbsp;</p>
+                            <div id="selectBox_error" style="float:right; color:red"></div>
+                            
+                        </div>  
+                </div>
+                </div>
+                
+            <div class="control">
+                <label for="comment">Comment* - </label>
+                <textarea name="comment" id="comment" cols="20" rows="7" placeholder="Enter comment here" onkeyup="validatecomment()" required></textarea>
+                <div id="error_comment" style="float:right; color: red;">
+                    <br>
+                </div>
+            </div>
+            <input type="submit" value="Submit" name="submit" disabled>
+            <input type="reset" value="Reset" name="reset" onclick="resetButton()">
+            <br><br>
+        </form>
+        <table id="myTable">
+
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Address 1</th>
+                <th>Address 2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Food</th>
+                <th>Comments</th>
+            </tr>
+        </table>
+    </main>
+   
+    <script src="script.js"></script>
+</body>
+</html>

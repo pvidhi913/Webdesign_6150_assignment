@@ -1,0 +1,59 @@
+form {
+    background-color: bisque;
+    padding: 30px;
+    width: 700px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+main{
+    padding: 50px;
+}
+.control {
+    margin-bottom: 20px;
+}
+label {
+    width: 200px;
+    float: left;
+}
+
+.selectBox{
+    display: inline-block;
+}
+
+
+
+#dropDown{
+    display: none;
+}
+#dropDownbox{
+    display: none;
+}
+
+#selectBox_error{
+    margin: 20px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+  }
+  
+  td,
+  th {
+    border: 1px solid #cab304;
+    text-align: left;
+    padding: 8px;
+  }
+  
+ 

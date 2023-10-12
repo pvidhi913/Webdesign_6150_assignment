@@ -1,0 +1,33 @@
+
+
+//placeholder selectors
+%btn{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+    color: #fff;
+
+    &:hover{
+        transform: scale(0.98);
+        
+
+    }
+}
+//extend feature
+//function lighten
+.read-more-btn{
+   
+    @extend %btn;
+    background-color: lighten($color: rgb(117, 74, 74), $amount: 30%);
+
+}
+
+.sign-up-btn{
+   
+    @extend %btn;
+    background-color: lighten($color: rgb(117, 74, 74), $amount: 30%);
+
+    
+
+}

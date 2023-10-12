@@ -1,0 +1,19 @@
+//mixin
+@mixin body{
+    #{$m}: 20px;
+    background-color: $background-color;
+  }
+  @mixin header{
+    background-color: $primary-color; 
+   color:$text-color; 
+    padding: 15px;
+    #{$d}: flex;
+    justify-content: space-between;
+    align-items: center;
+    #{$m}: -20px;
+  }
+  
+  @mixin footer-text{
+    background-color: $primary-color; 
+    color: $text-color; 
+  }

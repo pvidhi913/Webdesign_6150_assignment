@@ -1,0 +1,64 @@
+body{
+    background-image: url('bg.jpg');
+}
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(127, 131, 71);
+    color: white;
+   
+}
+.container-cal{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(127, 131, 71);
+    color: white;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.error {
+    color: rgb(128, 47, 47);
+    font-size: 14px;
+}
+
+button {
+    display: inline;
+    margin-top: 14px;
+    padding: 10px;
+    background-color: #020202;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ 
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+

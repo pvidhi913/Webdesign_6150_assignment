@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(189, 193, 135);;
+    color: #F3F4F6;
+}
+
+.watch{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    max-width: 360PX;
+    margin: 4rem auto;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+
+}
+
+.watch .time {
+	font-size: 5rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.controls button {
+	
+	cursor: pointer;
+	margin: 0 0.5rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	color: #010101;
+	background-color: rgb(255, 255, 255);
+	transition: 0.4s;
+    font-size: x-large;
+	
+}
+
+.controls button:hover {
+	
+    color: rgb(240, 72, 11);
+}
+

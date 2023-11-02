@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-cal">
+        <h2>Welcome to the Second Page</h2>
+        <p id="usernameDisplay">Logged-in User: </p>
+    <div class="container-cal">
+        <h1>Calculator <span id="usernameDisplay"></span></h1>
+        <div id="calculator">
+            <label for="number1">Number 1:</label>
+            <input type="text" id="number1" name="number1">
+            <div class="error" id="number1Error"></div>
+            <br>
+            <label for="number2">Number 2:</label>
+            <input type="text" id="number2" name="number2">
+            <div class="error" id="number2Error"></div>
+            <br>
+            <button id="add">Add</button>
+            <button id="subtract">Subtract</button>
+            <button id="multiply">Multiply</button>
+            <button id="divide">Divide</button>
+            <br><br>
+            <label for="result" >Result:</label>
+            <input type="text" id="result" disabled name="result" readonly >
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="calculator.js"></script>
+  
+</body>
+</html>
